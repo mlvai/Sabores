@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root{
+
+    --branding-blue  : #0049a2 ; /*azul grido*/
+    --branding-red   : #db3a35 ; /*rojo grido*/
+    --branding-light : #AB88FF ;
+
+ font-family: 'Courgette', cursive;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--branding-blue);
+    font-family: 'Courgette', cursive;
+ }
+a{
+/*    color: white;*/
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+
+
+.header {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header__logo img{
+    height: 60px;
+    width:  106px;   
+    margin: 5px;
+}
+
+.header__menu{
+    display: none;
+}
+
+.container-carousel{
+    margin: 5px 30px;
+}
+
+.carousel
+{
+    width: 80%;
+    overflow: scroll;
+    /*padding: 0px;*/
+    margin: auto; /*centra el elemento*/
+    position: relative;
+    white-space:nowrap;
+    
+}
+
+
+
+
+.ficha-sabor{
+width: 200px;
+height: 250px;
+border-radius: 25px;
+margin: 5px;
+overflow: hidden;
+background-color: var(--branding-blue);
+display:  inline-block ;
+transition: 650ms ;
+transform-origin: center;
+ 
+}
+
+.ficha-sabor h3 {
+     color: white;
+     margin: 0 10px ; 
+     
+}
+
+.ficha-sabor__imagen > img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    z-index: -5;
+   }
+   .ficha-sabor button{
+       display: none;
+       position: relative;
+       top: -100px;
+       margin: -80px 90px;
+       text-align: center;
+       font-size: 30px;
+       border-radius: 15px;
+       background-color: rgba(255,255,255,0.3);
+   }
