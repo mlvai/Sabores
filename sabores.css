@@ -42,6 +42,14 @@ a:hover{
     margin: 5px;
 }
 
+.header__icon img{
+    height: 50px;
+    width:  50px;   
+    margin: 5px;
+    font-size: 20px;
+
+}
+
 .header__menu{
     display: none;
 }
@@ -101,4 +109,56 @@ transform-origin: center;
    }
 .hide {
     display: none;
+}
+
+/*  Lista de precios */
+
+.product {
+ display: grid ;
+ grid-template-columns: 2fr 3fr;
+ grid-gap: 10px;
+ padding: 8px;
+ position: relative;
+}
+
+.product__category{
+    font-size: 5vw;
+    font-weight: 600;
+    padding: 10px 0;
+    position: sticky;
+    top:0;
+    margin: 0 5 10 0;
+    text-align: center ;
+    height: calc(10vw + 100px);
+    transition: all 0.2s ease-in;
+
+}
+
+.product__category > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+  
+   /* z-index: -5;*/
+}
+
+.product__priceList{
+    border-top: solid 2px;
+    padding-top: 2px;
+}
+
+.product__priceList ul{
+   list-style: none;
+}
+.product__priceList ul li {
+        
+        margin-bottom: 5px ;
+        border-bottom: 2px #404B51 dotted;
+        
+        font-size: 4vw;
+        line-height: 1;
+        display: flex;
+        justify-content: space-between ;
+      
 }
